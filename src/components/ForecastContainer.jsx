@@ -4,29 +4,18 @@ import DayCard from "./DayCard";
 
 
 
-const ForecastContainer = ({weather, temperature}) => {
+const ForecastContainer = ({ weather, temperature }) => {
 
-    
-    return ( 
 
-    <article className="opa">
-        <div className="container-fluid">
-            <h1 className="display-1">
-                WEATHER APP
-            </h1>
+    return (
 
-            <h5 className="CountryCity-text">
-                Sebastian Cantor
-            </h5>
-        </div>
-
-        <div className="row-card">
-
-            <DayCard weather={weather} temperature={temperature}/>
-
-        </div>  
-
-    </article>
+        <article>
+            <div className="container-fluid">
+                <DayCard weather={weather} temperature={temperature} />
+                <div className="Background_Gif"></div>
+                <p className="Designer_Text">Created and Designed by Juan Sebastian Cantor</p>
+            </div>
+        </article>
     )
 }
 
